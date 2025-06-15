@@ -16,7 +16,7 @@ submitBtn.addEventListener("click", function () {
       feedback.innerHTML = "Correct! Well done.";
       feedback.style.color = "green";
     } else {
-      feedback.innerHTML = "wrong answer";
+      feedback.innerHTML = "That's incorrect.Try again";
       feedback.style.color = "red";
     }
   } else {
