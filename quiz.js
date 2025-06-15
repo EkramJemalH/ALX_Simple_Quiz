@@ -9,10 +9,10 @@ if (feedback) {
 }
 submitBtn.addEventListener("click", function () {
   let submitedAnswer = document.querySelector('input[name="quiz"]:checked');
-  let isCorrect = checkAnswer();
+  const correctAnswer = checkAnswer();
   if (submitedAnswer) {
-    let userAnswer = submitedAnswer.value;
-    if (parseInt(userAnswer) === isCorrect) {
+    const userAnswer = parseInt(submitedAnswer.value);
+    if (userAnswer === correctAnswer) {
       feedback.innerHTML = "Correct answer";
       feedback.style.color = "green";
     } else {
