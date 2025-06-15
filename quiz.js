@@ -13,7 +13,7 @@ submitBtn.addEventListener("click", function () {
   if (submitedAnswer) {
     const userAnswer = parseInt(submitedAnswer.value);
     if (userAnswer === correctAnswer) {
-      feedback.innerHTML = "Correct answer";
+      feedback.innerHTML = "Correct! Well done.";
       feedback.style.color = "green";
     } else {
       feedback.innerHTML = "wrong answer";
