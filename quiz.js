@@ -1,10 +1,7 @@
-let x = 2;
-let y = 2;
+const correctAnswer = 4;
 const submitBtn = document.getElementById("submit-answer");
 const feedback = document.getElementById("feedback");
 function checkAnswer() {
-  let correctAnswer;
-  correctAnswer = x + y;
   return correctAnswer;
 }
 if (feedback) {
