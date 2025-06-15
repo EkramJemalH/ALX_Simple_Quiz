@@ -12,7 +12,7 @@ if (feedback) {
   feedback.style.display = "block";
 }
 submitBtn.addEventListener("click", function () {
-  let submitedAnswer = document.querySelector('input[name="quiz"]gir:checked');
+  let submitedAnswer = document.querySelector('input[name="quiz"]:checked');
   let isCorrect = checkAnswer();
   if (submitedAnswer) {
     let submitRadio = submitedAnswer.value;
