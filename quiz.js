@@ -11,8 +11,8 @@ submitBtn.addEventListener("click", function () {
   let submitedAnswer = document.querySelector('input[name="quiz"]:checked');
   let isCorrect = checkAnswer();
   if (submitedAnswer) {
-    let submitRadio = submitedAnswer.value;
-    if (parseInt(submitRadio) === isCorrect) {
+    let userAnswer = submitedAnswer.value;
+    if (parseInt(userAnswer) === isCorrect) {
       feedback.innerHTML = "Correct answer";
       feedback.style.color = "green";
     } else {
