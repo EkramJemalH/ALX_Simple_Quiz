@@ -1,0 +1,30 @@
+let x = 2;
+let y = 2;
+const submitBtn = document.getElementById("submit-answer");
+const feedback = document.getElementById("feedback");
+function checkAnswer() {
+  let sum;
+  sum = x + y;
+  return sum;
+}
+console.log(checkAnswer());
+if (feedback) {
+  feedback.style.display = "block";
+}
+submitBtn.addEventListener("click", function () {
+  let submitedAnswer = document.querySelector('input[name="quiz"]gir:checked');
+  let isCorrect = checkAnswer();
+  if (submitedAnswer) {
+    let submitRadio = submitedAnswer.value;
+    if (parseInt(submitRadio) === isCorrect) {
+      feedback.innerHTML = "Correct answer";
+      feedback.style.color = "green";
+    } else {
+      feedback.innerHTML = "wrong answer";
+      feedback.style.color = "red";
+    }
+  } else {
+    feedback.innerHTML = "Please select an answer";
+    feedback.style.color = "orange";
+  }
+});
