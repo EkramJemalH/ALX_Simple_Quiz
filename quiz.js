@@ -3,11 +3,10 @@ let y = 2;
 const submitBtn = document.getElementById("submit-answer");
 const feedback = document.getElementById("feedback");
 function checkAnswer() {
-  let sum;
-  sum = x + y;
-  return sum;
+  let correctAnswer;
+  correctAnswer = x + y;
+  return correctAnswer;
 }
-console.log(checkAnswer());
 if (feedback) {
   feedback.style.display = "block";
 }
